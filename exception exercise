@@ -1,0 +1,70 @@
+package deloitte;
+
+import java.util.Scanner;
+
+public class name_validate 
+{
+	String first_name;
+	String last_name;
+	Scanner sc;
+	char [] data;
+
+	public  name_validate(String first_name,String last_name)
+	{
+		this.first_name=first_name;
+		this.last_name=last_name;
+		sc=new Scanner(System.in);
+	}
+	public void addName()throws exception, Exception
+	{
+			System.out.println("enter first name:");
+			first_name=sc.next();
+			System.out.println("enter last name:");
+	        last_name=sc.next();
+	        class exception extends Exception
+	        {
+	   	/**
+				 * 
+				 */
+				private static final long serialVersionUID = 1L;
+		public exception(String s)
+	   	{
+	   		super(s);
+	   		
+	   	}
+	        }
+	        if(first_name.isEmpty() || last_name.isEmpty())
+	        {
+	        	throw new exception(first_name);
+	        }
+	        else
+	        {
+	        	
+	            System.out.println("the given name is not validate..."); 	
+	        }
+	
+	}
+
+
+	   public static void main(String args[]) throws Exception
+	    {
+	    	name_validate n1=new name_validate("","");
+		   {
+				try 
+				{
+		         	n1.addName();
+		        }
+				catch (exception e)
+				{
+			       e.printStackTrace();
+			    }
+	    	}
+	    }
+	
+     }   
+	
+	
+	
+	
+
+	
